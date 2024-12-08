@@ -17,7 +17,10 @@ const monsterrat = Montserrat({
 
 const Navbar = () => {
   return (
-    <header id="navbar" className="fixed z-50 top-0 left-0 right-0 bg-white">
+    <header
+      id="navbar"
+      className="shadow-sm fixed z-50 top-0 left-0 right-0 bg-white"
+    >
       <div className="md:p-8 p-4 flex items-center justify-between w-full">
         <Logo />
         <div
