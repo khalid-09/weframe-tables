@@ -1,10 +1,9 @@
 import Image from 'next/image';
-import SearchInput from './search-input';
 import { Montserrat, Poppins } from 'next/font/google';
 import { AlignJustify, ChevronDown, Heart, ShoppingCart } from 'lucide-react';
 import { Button } from '../ui/button';
 import HeaderTabs from './header-tabs';
-import Link from 'next/link';
+import Logo from './logo';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -18,28 +17,9 @@ const monsterrat = Montserrat({
 
 const Navbar = () => {
   return (
-    <>
-      <header
-        id="navbar"
-        className="md:p-8 p-4 flex items-center justify-between w-full"
-      >
-        <Link href="/#navbar" className="flex items-start gap-4">
-          <Image
-            src="/logo.png"
-            alt="logo"
-            className="md:block hidden"
-            height={65}
-            width={133}
-          />
-          <Image
-            src="/logo.png"
-            className="md:hidden block"
-            alt="logo"
-            height={45}
-            width={90}
-          />
-          <SearchInput />
-        </Link>
+    <header id="navbar" className="fixed z-50 top-0 left-0 right-0 bg-white">
+      <div className="md:p-8 p-4 flex items-center justify-between w-full">
+        <Logo />
         <div
           className={`font-medium ${poppins.className} antialiased text-sm hidden  md:flex items-center gap-3`}
         >
@@ -80,9 +60,9 @@ const Navbar = () => {
         >
           <AlignJustify className="size-8" />
         </Button>
-      </header>
+      </div>
       <HeaderTabs />
-    </>
+    </header>
   );
 };
 

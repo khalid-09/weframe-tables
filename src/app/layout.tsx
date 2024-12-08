@@ -32,7 +32,7 @@ export default function RootLayout({
       >
         <SmoothScrolling>
           <Navbar />
-          {children}
+          <main className="pt-[118px] md:pt-[163px]">{children}</main>
         </SmoothScrolling>
       </body>
     </html>
