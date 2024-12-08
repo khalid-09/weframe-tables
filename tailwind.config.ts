@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        cabinet: ['"Cabinet Grotesk"', 'sans-serif'],
+      },
       colors: {
         cardBg: '#F8F6F4',
         background: 'hsl(var(--background))',
