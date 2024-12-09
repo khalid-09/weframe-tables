@@ -38,7 +38,7 @@ const features = [
 
 const Features = () => {
   return (
-    <div className="mb-40">
+    <div className="mb-40 pt-20">
       <div className="max-w-4xl mx-auto mb-16">
         <h2 className="text-center text-4xl font-cabinet font-medium text-[#393939]">
           On s&apos;occupe de{' '}
@@ -62,6 +62,7 @@ const Features = () => {
                     alt={feature.title}
                     width={feature.width}
                     height={feature.height}
+                    className="mix-blend-multiply"
                   />
                 </div>
                 {index < features.length - 1 && (
