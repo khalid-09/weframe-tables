@@ -4,7 +4,11 @@ import Image from 'next/image';
 import SearchInput from './search-input';
 import { useLenis } from 'lenis/react';
 
-const Logo = () => {
+interface LogoProps {
+  showSearch?: boolean;
+}
+
+const Logo = ({ showSearch = false }: LogoProps) => {
   const lenis = useLenis();
 
   const handleLinkClick = () => {
@@ -32,7 +36,7 @@ const Logo = () => {
         width={90}
         onClick={handleLinkClick}
       />
-      <SearchInput />
+      {showSearch && <SearchInput />}
     </div>
   );
 };

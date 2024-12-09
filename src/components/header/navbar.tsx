@@ -22,7 +22,7 @@ const Navbar = () => {
       className="shadow-sm fixed z-50 top-0 left-0 right-0 bg-white"
     >
       <div className="md:p-8 p-4 flex items-center justify-between w-full">
-        <Logo />
+        <Logo showSearch />
         <div
           className={`font-medium ${poppins.className} antialiased text-sm hidden  md:flex items-center gap-3`}
         >
