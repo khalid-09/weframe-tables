@@ -5,11 +5,9 @@ import Hero from '@/sections/hero';
 
 const Page = () => {
   return (
-    <main>
-      <div className="md:px-8 px-4">
-        <Hero />
-        <InterestedArticles />
-      </div>
+    <main className="overflow-hidden">
+      <Hero />
+      <InterestedArticles />
       <div className="bg-gradient-to-b from-pink-100/20 to-white">
         <CTA />
       </div>

@@ -4,7 +4,7 @@ import ArticleCard from './article-card';
 
 const InterestedArticles = () => {
   return (
-    <section className="mt-8 space-y-4 mb-20">
+    <section className="mt-8 space-y-4 mb-20 md:px-8 px-4">
       <div className="flex md:items-center items-start  justify-between w-full">
         <h3 className="font-cabinet font-medium text-4xl text-[#393939]">
           Ces produits pourraient vous intéresser

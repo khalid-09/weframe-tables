@@ -12,6 +12,9 @@ export default {
       fontFamily: {
         cabinet: ['"Cabinet Grotesk"', 'sans-serif'],
       },
+      screens: {
+        mdCustom: [{ min: '770px', max: '1000px' }],
+      },
       colors: {
         cardBg: '#F8F6F4',
         pinkish: '#EE4197',

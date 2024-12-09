@@ -5,7 +5,8 @@ import Logo from '@/components/header/logo';
 const Footer = () => {
   return (
     <footer className="px-4 md:px-8 w-full flex md:flex-row flex-col justify-between">
-      <div className="flex flex-row justify-between items-center gap-10 max-w-[800px]">
+      <div className="flex flex-row items-center max-[1000px]:flex-col  max-[1000px]:items-start min-[770px]:flex-row min-[770px]:items-center justify-between gap-10 mdCustom:w-full md:max-w-[50rem] ">
+        {' '}
         <Logo />
         <div className="md:block hidden">
           <Links />

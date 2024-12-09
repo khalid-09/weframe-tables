@@ -5,14 +5,14 @@ import ProductDetails from '@/components/hero/product-details';
 
 const Hero = () => {
   return (
-    <>
+    <section className="md:px-8 px-4">
       <Breadcumbs />
       <div id="page1" className="flex flex-col md:flex-row gap-5">
         <ImageDisplay />
         <ProductDetails />
       </div>
       <ProductDescription />
-    </>
+    </section>
   );
 };
 

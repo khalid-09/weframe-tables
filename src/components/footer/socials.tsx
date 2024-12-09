@@ -24,7 +24,7 @@ const Socials = () => {
   return (
     <div className="space-y-3">
       <p className="font-bold text-lg text-right font-cabinet">NOUS SUIVRE</p>
-      <div className="space-x-2.5">
+      <div className="flex items-center gap-2.5 sm:gap-1.5 flex-wrap">
         {icons.map(({ icon, alt }, index) => (
           <Button
             key={index}
