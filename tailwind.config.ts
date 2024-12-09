@@ -14,6 +14,7 @@ export default {
       },
       colors: {
         cardBg: '#F8F6F4',
+        pinkish: '#EE4197',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
