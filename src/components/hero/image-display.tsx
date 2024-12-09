@@ -25,6 +25,8 @@ const ImageDisplay = () => {
           alt="Table img"
           width={552}
           height={552}
+          placeholder="blur"
+          blurDataURL="/blur-table.webp"
         />
       </div>
     </div>

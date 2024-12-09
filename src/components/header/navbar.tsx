@@ -46,7 +46,8 @@ const Navbar = () => {
             <ShoppingCart size={20} />
             <span>Panier</span>
           </Button>
-          <div className="size-11 bg-[#EAEDEE] rounded-full"></div>
+
+          <div className="size-11 bg-[#EAEDEE] rounded-full" />
           <div className="flex items-center cursor-pointer gap-2">
             <span
               className={`text-[#1F2A37] ${monsterrat.className} antialiased`}
@@ -57,11 +58,11 @@ const Navbar = () => {
           </div>
         </div>
         <Button
-          className="ml-2 md:hidden flex items-center justify-center"
+          className="ml-1 h-[3.125rem] w-12 md:hidden flex items-center justify-center"
           size="icon"
           variant="outline"
         >
-          <AlignJustify className="size-8" />
+          <AlignJustify />
         </Button>
       </div>
       <HeaderTabs />
