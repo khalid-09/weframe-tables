@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import SearchInput from './search-input';
 import { useLenis } from 'lenis/react';
+import logo from '../../../public/logo.png';
 
 interface LogoProps {
   showSearch?: boolean;
@@ -21,7 +22,7 @@ const Logo = ({ showSearch = false }: LogoProps) => {
   return (
     <div className="flex items-start gap-4">
       <Image
-        src="/logo.png"
+        src={logo}
         alt="logo"
         className="md:block hidden cursor-pointer"
         height={65}
@@ -29,7 +30,7 @@ const Logo = ({ showSearch = false }: LogoProps) => {
         onClick={handleLinkClick}
       />
       <Image
-        src="/logo.png"
+        src={logo}
         className="md:hidden cursor-pointer block"
         alt="logo"
         height={45}

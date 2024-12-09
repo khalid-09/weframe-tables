@@ -4,6 +4,7 @@ import { AlignJustify, ChevronDown, Heart, ShoppingCart } from 'lucide-react';
 import { Button } from '../ui/button';
 import HeaderTabs from './header-tabs';
 import Logo from './logo';
+import lightBulb from '../../../public/icons/lightbulb.png';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -28,7 +29,7 @@ const Navbar = () => {
         >
           <div className="flex items-center gap-2">
             <Image
-              src="/icons/lightbulb.png"
+              src={lightBulb}
               alt="Light Bulb Icon"
               height={18}
               width={18}

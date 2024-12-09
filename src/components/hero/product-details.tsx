@@ -2,6 +2,9 @@ import Image from 'next/image';
 import { Button } from '../ui/button';
 import { Minus, Plus } from 'lucide-react';
 import { Playfair_Display } from 'next/font/google';
+import heart from '../../../public/heart.png';
+import ruler from '../../../public/ruler.png';
+import planet from '../../../public/planet.png';
 
 const playFairDisplay = Playfair_Display({
   subsets: ['latin'],
@@ -19,7 +22,7 @@ const ProductDetails = () => {
             Cheese – appareil à raclette 1/2 roue
           </h2>
           <Image
-            src="/heart.png"
+            src={heart}
             alt="Heart Icon"
             className="cursor-pointer mt-2 md:mt-0"
             width={27.64}
@@ -33,19 +36,14 @@ const ProductDetails = () => {
           </div>
           <div className="border-y flex items-center gap-4 py-5">
             <div className="flex items-center gap-2.5">
-              <Image src="/ruler.png" alt="Ruler Icon" width={24} height={24} />
+              <Image src={ruler} alt="Ruler Icon" width={24} height={24} />
               <p>
                 20
                 <sup>cm</sup>
               </p>
             </div>
             <div className="flex items-center gap-2.5">
-              <Image
-                src="/planet.png"
-                alt="Planet Icon"
-                width={24}
-                height={24}
-              />
+              <Image src={planet} alt="Planet Icon" width={24} height={24} />
               <p>
                 50
                 <sup>cm</sup>

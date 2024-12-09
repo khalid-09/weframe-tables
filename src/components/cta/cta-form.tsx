@@ -2,17 +2,13 @@ import Image from 'next/image';
 import { Input } from '../ui/input';
 import { Button } from '../ui/button';
 import { ArrowRightIcon } from 'lucide-react';
+import sofa from '../../../public/sofa.png';
 
 const CtaForm = () => {
   return (
     <div className="flex md:gap-6 md:flex-row flex-col w-full mb-40">
       <div className="w-full max-w-[43.938rem] min-h-[300px]  rounded-t-[30px] relative md:rounded-[30px] overflow-hidden ">
-        <Image
-          src="/sofa.png"
-          alt="sofa"
-          fill
-          className="absolute object-cover"
-        />
+        <Image src={sofa} alt="sofa" fill className="absolute object-cover" />
       </div>
       <div className="bg-[#FFF3F9] rounded-b-[20px] md:rounded-[20px] w-full p-8 md:p-10 md:py-12 flex gap-4 md:gap-0 flex-col justify-between">
         <h2 className="font-cabinet font-medium text-4xl md:text-[2.688rem]">

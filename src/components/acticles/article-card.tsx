@@ -3,6 +3,8 @@ import { Button } from '../ui/button';
 import { Plus, Minus } from 'lucide-react';
 import { Playfair_Display } from 'next/font/google';
 import { cn } from '@/lib/utils';
+import heart from '../../../public/heart.png';
+import table2 from '../../../public/table2.png';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -18,7 +20,7 @@ const ArticleCard = ({ className }: ArticleCardProps) => {
     <div className={cn('w-full md:w-1/3', className)}>
       <div className="bg-cardBg p-3 rounded-md group">
         <div className="flex items-center p-2 justify-between">
-          <Image src="/heart.png" alt="heart" width={32} height={32} />
+          <Image src={heart} alt="heart" width={32} height={32} />
           <div className="flex items-center gap-2">
             <span className="p-1 px-2 rounded-sm bg-white text-[0.625rem] font-medium flex items-center justify-center uppercase">
               art de la table
@@ -33,7 +35,7 @@ const ArticleCard = ({ className }: ArticleCardProps) => {
         </div>
         <div className="flex items-center justify-center">
           <Image
-            src="/table2.png"
+            src={table2}
             alt="table image"
             width={224}
             height={224}
