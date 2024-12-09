@@ -2,15 +2,20 @@ import Image from 'next/image';
 import { Button } from '../ui/button';
 import { Plus, Minus } from 'lucide-react';
 import { Playfair_Display } from 'next/font/google';
+import { cn } from '@/lib/utils';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
   weight: ['400', '700', '900', '800', '500', '600'],
 });
 
-const ArticleCard = () => {
+interface ArticleCardProps {
+  className?: string;
+}
+
+const ArticleCard = ({ className }: ArticleCardProps) => {
   return (
-    <div className="w-full md:w-1/3">
+    <div className={cn('w-full md:w-1/3', className)}>
       <div className="bg-cardBg p-3 rounded-md group">
         <div className="flex items-center p-2 justify-between">
           <Image src="/heart.png" alt="heart" width={32} height={32} />
@@ -70,7 +75,7 @@ const ArticleCard = () => {
           <p className="text-[#9C9C9C] text-sm">
             0,35€/Pièce · <span className="text-[0.625rem]">RÉF : VABGN5</span>
           </p>
-          <span className="text-[#546A7D] bg-[#F1F4F6] rounded-full py-1.5 px-2 font-medium text-[0.688rem]">
+          <span className="text-[#546A7D] shrink-0 bg-[#F1F4F6] rounded-full py-1.5 px-2 font-medium text-[0.688rem]">
             20 pièces
           </span>
         </div>

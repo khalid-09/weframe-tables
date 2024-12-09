@@ -21,11 +21,11 @@ const ProductDescription = () => {
       </div>
       <div className="w-full bg-cardBg rounded-sm cursor-pointer text-[#393939] font-cabinet">
         <p className="h-1/2 p-6 flex justify-between items-center">
-          <span>LIVRAISONS</span>
+          <span className="font-medium">LIVRAISONS</span>
           <Plus size={24} className="text-[#393939]" />
         </p>
         <p className="h-1/2 p-6 flex justify-between items-center">
-          <span>QUESTIONS</span>
+          <span className="font-medium">QUESTIONS</span>
           <Plus size={24} className="text-[#393939]" />
         </p>
       </div>
