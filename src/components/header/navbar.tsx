@@ -1,17 +1,18 @@
 import Image from 'next/image';
 import { Montserrat, Poppins } from 'next/font/google';
-import { AlignJustify, ChevronDown, Heart, ShoppingCart } from 'lucide-react';
+import { ChevronDown, Heart, ShoppingCart } from 'lucide-react';
 import { Button } from '../ui/button';
 import HeaderTabs from './header-tabs';
 import Logo from './logo';
 import lightBulb from '../../../public/icons/lightbulb.png';
+import MobileNav from './mobile-nav';
 
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 });
 
-const monsterrat = Montserrat({
+export const monsterrat = Montserrat({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 });
@@ -27,7 +28,7 @@ const Navbar = () => {
         <div
           className={`font-medium ${poppins.className} antialiased text-sm hidden  md:flex items-center gap-3`}
         >
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 lgCustom:hidden">
             <Image
               src={lightBulb}
               alt="Light Bulb Icon"
@@ -36,20 +37,20 @@ const Navbar = () => {
             />
             <span>Inspirations</span>
           </div>
-          <div className="p-[0.625rem] flex items-center gap-2">
+          <div className="p-[0.625rem] flex items-center gap-2 xlCustom:hidden">
             <Heart size={20} className="text-[#8F9BA0]" />
             <span>Mes favoris</span>
             <span className="bg-[#CAD2D566] h-[1.125rem] w-7 rounded-full text-[0.625rem] flex items-center justify-center text-[#242D30]">
               24
             </span>
           </div>
-          <Button className="bg-[#007AAD]  flex items-center gap-2 text-white h-12 w-[6.563rem] py-[0.625rem] px-4">
+          <Button className="bg-[#007AAD]  flex items-center gap-2 text-white h-12 w-[6.563rem] py-[0.625rem] px-4 buttonCustom:hidden">
             <ShoppingCart size={20} />
             <span>Panier</span>
           </Button>
 
-          <div className="size-11 bg-[#EAEDEE] rounded-full" />
-          <div className="flex items-center cursor-pointer gap-2">
+          <div className="size-11 bg-[#EAEDEE] rounded-full mdCustom:hidden" />
+          <div className="flex items-center cursor-pointer gap-2 mdCustom:hidden">
             <span
               className={`text-[#1F2A37] ${monsterrat.className} antialiased`}
             >
@@ -58,13 +59,7 @@ const Navbar = () => {
             <ChevronDown size={16} />
           </div>
         </div>
-        <Button
-          className="ml-1 h-[3.125rem] w-12 md:hidden flex items-center justify-center"
-          size="icon"
-          variant="outline"
-        >
-          <AlignJustify />
-        </Button>
+        <MobileNav />
       </div>
       <HeaderTabs />
     </header>

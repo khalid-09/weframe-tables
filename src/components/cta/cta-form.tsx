@@ -6,7 +6,7 @@ import sofa from '../../../public/sofa.png';
 
 const CtaForm = () => {
   return (
-    <div className="flex md:gap-6 md:flex-row flex-col w-full mb-40">
+    <div className="flex md:gap-6 mdCustom:gap-3 md:flex-row flex-col w-full mb-40">
       <div className="w-full max-w-[43.938rem] min-h-[300px]  rounded-t-[30px] relative md:rounded-[30px] overflow-hidden ">
         <Image src={sofa} alt="sofa" fill className="absolute object-cover" />
       </div>

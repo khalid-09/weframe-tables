@@ -14,6 +14,9 @@ export default {
       },
       screens: {
         mdCustom: [{ min: '770px', max: '1000px' }],
+        lgCustom: [{ max: '1504px' }],
+        xlCustom: [{ max: '1373px' }],
+        buttonCustom: [{ max: '1209px' }],
       },
       colors: {
         cardBg: '#F8F6F4',
