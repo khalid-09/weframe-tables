@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import { Button } from '../ui/button';
 import { Plus, Minus } from 'lucide-react';
@@ -5,6 +7,7 @@ import { Playfair_Display } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import heart from '../../../public/heart.png';
 import table2 from '../../../public/table2.png';
+import { motion } from 'motion/react';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -17,8 +20,17 @@ interface ArticleCardProps {
 
 const ArticleCard = ({ className }: ArticleCardProps) => {
   return (
-    <div className={cn('w-full md:w-1/3', className)}>
-      <div className="bg-cardBg p-3 rounded-md group">
+    <motion.div
+      className={cn('w-full md:w-1/3', className)}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{
+        duration: 0.8,
+        ease: 'easeInOut',
+      }}
+    >
+      <div className="bg-cardBg p-3 rounded-md group overflow-hidden">
         <div className="flex items-center p-2 justify-between">
           <Image src={heart} alt="heart" width={32} height={32} />
           <div className="flex items-center gap-2">
@@ -82,7 +94,7 @@ const ArticleCard = ({ className }: ArticleCardProps) => {
           </span>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
