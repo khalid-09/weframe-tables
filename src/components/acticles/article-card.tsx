@@ -18,6 +18,11 @@ interface ArticleCardProps {
   className?: string;
 }
 
+/**
+ * ArticleCard component
+ * This component is used to display individual article card which includes the image of the article, title, price, and other details with subtle revealing animation which is why its rendered on the client side.
+ */
+
 const ArticleCard = ({ className }: ArticleCardProps) => {
   return (
     <motion.div

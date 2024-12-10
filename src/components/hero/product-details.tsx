@@ -11,6 +11,11 @@ const playFairDisplay = Playfair_Display({
   weight: ['400', '500', '600', '700', '800', '900'],
 });
 
+/**
+ * ProductDetails component
+ * This component is used to display the product details in the hero section of the website including the product name, price, description, and the add to cart button.
+ */
+
 const ProductDetails = () => {
   return (
     <div id="2nd" className="w-full flex flex-col gap-3 justify-between">

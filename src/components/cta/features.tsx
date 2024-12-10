@@ -36,6 +36,11 @@ const features = [
   },
 ];
 
+/**
+ * Features component
+ * This component lists the features of the website with icons and text.
+ */
+
 const Features = () => {
   return (
     <div className="mb-40 pt-20">

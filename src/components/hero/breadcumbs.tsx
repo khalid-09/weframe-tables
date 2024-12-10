@@ -1,3 +1,8 @@
+/**
+ * Breadcumbs component
+ * This component is used to display the breadcumbs of the website which is the current tab and the product viewed.
+ */
+
 const Breadcumbs = () => {
   return (
     <div className="py-3 font-medium text-sm flex items-center gap-2.5 my-2">

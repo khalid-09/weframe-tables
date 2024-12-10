@@ -3,6 +3,11 @@ import table from '../../../public/table.png';
 import tableDark from '../../../public/table-dark.png';
 import tableLight from '../../../public/table-light.png';
 
+/**
+ * ImageDisplay component
+ * This component is used to display the images of the product in the hero section of the website.
+ */
+
 const ImageDisplay = () => {
   return (
     <div id="1st" className="bg-cardBg w-full rounded-md p-3 flex">

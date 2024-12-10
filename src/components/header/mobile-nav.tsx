@@ -14,6 +14,11 @@ import { monsterrat } from './navbar';
 import lightBulb from '../../../public/icons/lightbulb.png';
 import Image from 'next/image';
 
+/**
+ * Mobile navigation component
+ * This component is used to display the mobile navigation or on smaller screens.
+ */
+
 const MobileNav = () => {
   return (
     <Sheet>

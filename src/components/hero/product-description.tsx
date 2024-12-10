@@ -1,5 +1,10 @@
 import { Plus } from 'lucide-react';
 
+/**
+ * ProductDescription component
+ * This component is used to display the product description in the hero section of the website including the product description and the delivery and questions section.
+ */
+
 const ProductDescription = () => {
   return (
     <div className="mt-12 flex md:flex-row gap-5 flex-col">

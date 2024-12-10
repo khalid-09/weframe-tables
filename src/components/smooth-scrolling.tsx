@@ -1,5 +1,10 @@
 import { ReactLenis } from '@/lib/lenis';
 
+/**
+ * SmoothScrolling component
+ * This component is used to provide smooth scrolling to the website.
+ */
+
 const SmoothScrolling = ({ children }: { children: React.ReactNode }) => {
   const lenisOptions = {
     lerp: 0.1,

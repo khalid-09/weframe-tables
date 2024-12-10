@@ -9,6 +9,11 @@ interface LogoProps {
   showSearch?: boolean;
 }
 
+/**
+ * Logo component
+ * This component is the logo of the website that redirects to the home page and is rendered on the client as we are using lenis for smooth scrolling.
+ */
+
 const Logo = ({ showSearch = false }: LogoProps) => {
   const lenis = useLenis();
 

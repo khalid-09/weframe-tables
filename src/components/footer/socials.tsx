@@ -20,6 +20,11 @@ const icons = [
   },
 ];
 
+/**
+ * Socials Component
+ * This component is used to display the social media icons to follow the website.
+ */
+
 const Socials = () => {
   return (
     <div className="space-y-3">

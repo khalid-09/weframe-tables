@@ -4,6 +4,11 @@ import { Button } from '../ui/button';
 import { ArrowRightIcon } from 'lucide-react';
 import sofa from '../../../public/sofa.png';
 
+/**
+ * CtaForm component
+ * This component is used to display the call to action form section of the website with a form to learn more and a image of one of the product.
+ */
+
 const CtaForm = () => {
   return (
     <div className="flex md:gap-6 mdCustom:gap-3 md:flex-row flex-col w-full mb-40">

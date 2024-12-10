@@ -6,6 +6,11 @@ const inter = Inter({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 });
 
+/**
+ * HeaderTabs component
+ * This component is used to display the header tabs which is the different categories of the products.
+ */
+
 const HeaderTabs = () => {
   return (
     <nav

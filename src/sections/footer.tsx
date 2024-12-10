@@ -2,6 +2,11 @@ import Links from '@/components/footer/links';
 import Socials from '@/components/footer/socials';
 import Logo from '@/components/header/logo';
 
+/**
+ * Footer component
+ * This component is used to display the footer of the website with links for different purpose and social icons to contact.
+ */
+
 const Footer = () => {
   return (
     <footer className="px-4 md:px-8 w-full flex md:flex-row flex-col justify-between">

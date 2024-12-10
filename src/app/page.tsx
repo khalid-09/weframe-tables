@@ -3,6 +3,10 @@ import CTA from '@/sections/cta';
 import Footer from '@/sections/footer';
 import Hero from '@/sections/hero';
 
+/**
+ * Home Page or Landing Page containing the different sections of the website.
+ */
+
 const Page = () => {
   return (
     <main className="overflow-hidden">

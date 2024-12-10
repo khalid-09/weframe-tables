@@ -17,6 +17,11 @@ export const monsterrat = Montserrat({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 });
 
+/**
+ * Navbar component
+ * This component is the header of the website that contains the logo, search bar, and navigation links.
+ */
+
 const Navbar = () => {
   return (
     <header

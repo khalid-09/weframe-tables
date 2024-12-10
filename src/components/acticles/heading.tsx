@@ -5,6 +5,11 @@ interface HeadingProps {
   heading: string;
 }
 
+/**
+ * Heading component
+ * This component is used to display the heading for the individual sections in the articles component and its reusable and with a link to view more.
+ */
+
 const Heading = ({ heading }: HeadingProps) => {
   return (
     <div className="flex md:items-center items-start  justify-between w-full">

@@ -1,6 +1,11 @@
 import { Search } from 'lucide-react';
 import { Input } from '../ui/input';
 
+/**
+ * Search input component
+ * This component is used to search for products and has a search icon.
+ */
+
 const SeachInput = () => {
   return (
     <div className="relative ">

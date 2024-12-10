@@ -2,6 +2,11 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import ArticleCard from '../article-card';
 import Heading from '../heading';
 
+/**
+ * SimilarArticles component
+ * This component is used to display similar articles to the user based on their preferences it includes and heading for the component and articles are displayed in a carousel fashion with buttons on both ends to navigate between the individual article cards.
+ */
+
 const SimilarArticles = () => {
   return (
     <div className="md:px-8 mt-24 relative bg-[#FBF9F899] py-[1.875rem] space-y-[1.875rem] px-4">

@@ -23,6 +23,11 @@ const links = [
   },
 ];
 
+/**
+ * Links component
+ * This component is used to display the links in the footer section of the website.
+ */
+
 const Links = () => {
   return (
     <div className="text-[#393939] mt-12 md:mt-0 flex w-full md:flex-row flex-col  gap-16">
