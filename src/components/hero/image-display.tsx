@@ -8,11 +8,26 @@ const ImageDisplay = () => {
     <div id="1st" className="bg-cardBg w-full rounded-md p-3 flex">
       <div className="space-y-2">
         <div className="rounded-sm bg-white flex items-center justify-center w-14 h-14">
-          <Image src={tableDark} alt="Table img" width={44} height={44} />
+          <Image
+            src={tableDark}
+            alt="Dark table thumbnail"
+            width={44}
+            height={44}
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg=="
+          />
         </div>
         {Array.from({ length: 3 }).map((_, i) => (
           <div key={i} className="rounded-sm bg-white w-fit">
-            <Image src={tableLight} alt="Table img" width={55} height={55} />
+            <Image
+              src={tableLight}
+              alt={`Light table thumbnail ${i + 1}`}
+              width={55}
+              height={55}
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg=="
+            />
           </div>
         ))}
       </div>
@@ -20,9 +35,12 @@ const ImageDisplay = () => {
         <Image
           className="mix-blend-multiply"
           src={table}
-          alt="Table img"
+          alt="Main table image"
           width={552}
           height={552}
+          priority
+          placeholder="blur"
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg=="
         />
       </div>
     </div>
