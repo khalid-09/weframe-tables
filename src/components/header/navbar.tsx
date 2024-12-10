@@ -49,7 +49,7 @@ const Navbar = () => {
               24
             </span>
           </div>
-          <Button className="bg-[#007AAD]  flex items-center gap-2 text-white h-12 w-[6.563rem] py-[0.625rem] px-4 buttonCustom:hidden">
+          <Button className="bg-[#007AAD] hover:bg-[#005F85] flex items-center gap-2 text-white h-12 w-[6.563rem] py-[0.625rem] px-4 buttonCustom:hidden">
             <ShoppingCart size={20} />
             <span>Panier</span>
           </Button>

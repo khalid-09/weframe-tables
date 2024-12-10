@@ -33,7 +33,7 @@ const CtaForm = () => {
               className="rounded-md h-[3.625rem] px-6 border text-[#A68A98] text-lg font-light border-[#F5E1EB] bg-white"
               placeholder="john@doe.com"
             />
-            <Button className="text-white flex items-center gap-2 rounded-md h-[3.75rem] bg-[#5CD2DD]">
+            <Button className="text-white flex items-center gap-2 rounded-md h-[3.75rem] bg-[#5CD2DD] hover:bg-[#44B3C2]">
               <span className="uppercase">S&apos;inscrire</span>
               <ArrowRightIcon size={22} />
             </Button>

@@ -59,10 +59,7 @@ const ArticleCard = ({ className }: ArticleCardProps) => {
             className="mix-blend-multiply transform transition-transform duration-300 group-hover:scale-110"
           />
         </div>
-        <div
-          id="quickbuy"
-          className="bg-white mt-3 rounded-md h-[3.125rem] p-2 gap-2 items-center flex opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-        >
+        <div className="bg-white mt-3 rounded-md h-[3.125rem] p-2 gap-2 items-center flex opacity-0 transition-opacity duration-300 group-hover:opacity-100">
           <div className="flex w-full items-center gap-1.5">
             <span className="text-xs text-black">QTÉ</span>
             <div
@@ -80,7 +77,9 @@ const ArticleCard = ({ className }: ArticleCardProps) => {
               </button>
             </div>
           </div>
-          <Button className="bg-[#EE4197] h-10 w-[4.625rem]">Ajouter</Button>
+          <Button className="bg-[#EE4197] hover:bg-[#D13586] h-10 w-[4.625rem]">
+            Ajouter
+          </Button>
         </div>
       </div>
       <div className="mt-3 px-[0.625rem] space-y-2">

@@ -92,7 +92,7 @@ const ProductDetails = () => {
             <Plus size={16} strokeWidth={2} aria-hidden="true" />
           </Button>
         </div>
-        <Button className="bg-[#5CD2DD] flex-grow h-[3.125rem] py-[0.875rem] font-semibold uppercase">
+        <Button className="bg-[#5CD2DD] hover:bg-[#44B3C2] flex-grow h-[3.125rem] py-[0.875rem] font-semibold uppercase">
           Ajouter au panier
         </Button>
       </div>
